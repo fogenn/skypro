@@ -1,1 +1,5 @@
 *.rar
+students/*
+students/site/style.css
+students/site/index.html
+.vscode
