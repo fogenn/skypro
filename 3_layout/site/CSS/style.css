@@ -8,8 +8,17 @@ body {
     font-family: Montserrat;
 }
 
+.center {
+    padding-left: calc(50% - (1200px / 2));
+    padding-right: calc(50% - (1200px / 2));
+}
+
 .header {
+    display: flex;
     height: 76px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
 }
 
 .header input {
@@ -43,8 +52,11 @@ body {
 }
 
 .navigation_list {
+    display: flex;
+    list-style-type: none;
     font-size: 16px;
     line-height: 20px;
+    column-gap: 32px;
 }
 
 .main-bg {
@@ -78,8 +90,18 @@ body {
     line-height: 24px;
 }    
 
+.catalog__content {
+    row-gap: 56px;
+}
+
 .product-box {
     margin-top: 64px;
+}
+
+.product-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product-box h2 {
@@ -90,7 +112,13 @@ body {
     margin-bottom: 32px;
 }
 
-.product-box h3 {
+.card {
+    max-width: 377px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -98,27 +126,34 @@ body {
     margin-bottom: 8px;
 }
 
-.product-box__description {
+.card__description {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
     margin-bottom: 12px;
 }
 
-.product-box__total-price {
+.card__price {
+    display: flex;
+    gap: 32px;
+    flex-wrap: nowrap;
+}
+
+.card__total-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #050505;
 }
 
-.product-box__discount-price {
+.card__discount-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     text-decoration-line: line-through;
     color: #888888;
 }
+
 
 .link-box {
     margin-top: 31px;
@@ -136,7 +171,12 @@ body {
 
 .footer {
     margin-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 64px;
     background-color: rgb(247, 246, 246);
+    display: flex;            
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer h4 {
@@ -144,11 +184,24 @@ body {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-    margin-bottom: 12px;
+}
+
+.footer__wrapp-link {
+    display: flex;
+    gap: 125px;
 }
 
 .footer-nav {
-    
+    display: flex;
+    row-gap: 12px;
+    flex-direction: column;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .footer-nav__link {
@@ -159,6 +212,12 @@ body {
     text-decoration: none;
 }
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
 .link-contact {
     font-weight: 500;
     font-size: 14px;
@@ -167,11 +226,22 @@ body {
     text-decoration: none;
 }
 
+.social-media {
+    display: flex;
+    column-gap: 20px;
+}
+
+.subscribe {
+    display: flex;
+    max-width: 260px;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
 .subscribe p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: #000000;
-    margin-bottom: 16px;
 }
 
 .subscribe input {
@@ -199,13 +269,16 @@ body {
 }
 
 .subscribe button {
+    padding-top: 13px;
+    padding-bottom: 13px;
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 16px;
-    width: 275px;
-    height: 46px;
-    font-size: 15px;
-    line-height: 18px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
     color: #000000;
 }
