@@ -1,7 +1,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    block-size: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,7 +28,6 @@ button {
 .header input {
     padding: 10px 32px;
     width: 288px;
-    box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background: transparent;
@@ -150,10 +149,10 @@ button {
 }
 
 .filters__select {
+    font-family: inherit;
     background: url(../IMG/arrow.svg) no-repeat right 15px center;
     appearance: none;
     padding: 9px 44px 9px 22px;
-    box-sizing: border-box;
     border: 1px solid rgb(196, 196, 196);
     border-radius: 20px;
 
@@ -281,7 +280,6 @@ button {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    box-sizing: border-box;
 }
 
 .card__actions img {
@@ -446,7 +444,6 @@ button {
 .subscribe input {
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
-    box-sizing: border-box;
     border-radius: 16px;
     outline: none;
     font-family: inherit;
@@ -471,7 +468,6 @@ button {
     padding-top: 13px;
     padding-bottom: 13px;
     background: rgba(222, 215, 215, 0.41);
-    box-sizing: border-box;
     border-radius: 16px;
     width: 100%;
     font-family: inherit;
