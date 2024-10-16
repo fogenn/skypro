@@ -1,0 +1,229 @@
+
+.main-bg--cart {
+    height: 400px;
+    background-image: url(../IMG/main_bg_cart_img.jpeg);
+}
+
+.cart {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &__heading {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 32px;
+        margin-bottom: 14px;
+    }
+
+    &__ordering {
+        grid-column: span 4;
+    }
+
+    &__heading span:nth-child(1) {
+        grid-column: span 7;
+    }
+    &__heading span:nth-child(2) {
+        grid-column: span 1;
+    }
+}
+
+.cart-box {
+    grid-column: span 8;
+    display: grid;
+
+    &__cart-wrapper {
+        display: grid;
+        gap: 32px;
+    }
+    
+    &__card-in-cart{
+        padding-top: 25px;
+        border-top: 0.5px solid rgb(202, 205, 216);
+    }
+
+    &__wrapper-img {
+        grid-column: span 2;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 7px;
+        margin-top: 50px;
+    }
+
+    &__actions button {
+        padding: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        width: 200px;
+        background-color: #fff;
+
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
+.card-in-cart {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 32px;
+
+    &__wrapper-img {
+        display: flex;
+        grid-column: span 2;
+        height: 173px;
+        width: 173px;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        // object-position: center center;
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 5;
+        gap: 14px;
+
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+    }
+
+    &__price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__actions button {
+        font-family: inherit;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-skip-ink: none;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    
+    &__quantity {
+        grid-column: span 1;
+    }
+    
+    &__quantity-input {
+        width: 100%;
+        height: 51px;
+        padding: 12px 12px;
+        border: none;
+        border-radius: 6px;
+        background: rgb(247, 246, 246); 
+
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
+.ordering {
+    height: 556px;
+    padding: 42px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    background: $colorBg-wildSand;
+
+    &__box-input {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+        align-self: start;
+    }
+
+    &__box-input input {
+        width: 288px;
+        font-family: inherit;
+        outline: none;
+        border: none;
+        background-color: $colorBg-wildSand;
+        border-bottom: 1px solid rgb(202, 205, 216);
+    }
+
+    &__box-input input::placeholder {
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+    }
+
+    &__submit {
+        font-family: inherit;
+        margin-top: 18px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+
+        padding: 10px 76px;
+    }
+
+    &__price {
+        margin-top: 64px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__total-price {
+        font-weight: 500;
+    }
+}
