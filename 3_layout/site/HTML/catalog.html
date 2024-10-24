@@ -33,18 +33,65 @@
 	</div>
 	<div class="center filters-box">
 		<nav class="filters">
-			<ul class="filters__breadcrumbs">
+			<ul class="filters__breadcrumbs breadcrumbs">
 				<li class="breadcrumbs__item"><a href="">&nbsp;Главная</a></li>
 				<li class="breadcrumbs__item"><a href="">&nbsp;Каталог&nbsp;товаров</a></li>
 			</ul>
 
-			<form action="" class="filters__form">
-				<select name="" id="" class="filters__select">
-					<option selected disabled>Фильтрация</option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-				<select name="" id="" class="filters__select">
+			<form action="#" class="filters__form-params form-params">
+				<div class="form-params__wrapper-controls">
+					<button class="form-params__button">Фильтрация</button>
+					<fieldset class="form-params__controls controls">
+						<legend class="controls__legend">Сроки доставки</legend>
+						<div class="controls__delivery-time radio">
+							<input
+								class="controls__radio-input" 
+								type="radio" 
+								id="delivery-time-0" 
+								name="delivery-time"
+							>
+							<label class="controls__radio-label" for="delivery-time-0">Неважно</label>
+						</div>
+						<div class="controls__delivery-time radio">
+							<input 
+								class="controls__radio-input" 
+								type="radio" 
+								id="delivery-time-1"
+								name="delivery-time"
+							>
+							<label class="controls__radio-label" for="delivery-time-1">Сегодня</label>
+						</div>
+						<div class="controls__delivery-time radio">
+							<input 
+								class="controls__radio-input" 
+								type="radio" 
+								id="delivery-time-2"
+								name="delivery-time"
+							>
+							<label class="controls__radio-label" for="delivery-time-2">Завтра</label>
+						</div>
+						<div class="controls__delivery-time radio">
+							<input 
+								class="controls__radio-input" 
+								type="radio" 
+								id="delivery-time-3"
+								name="delivery-time"
+							>
+							<label class="controls__radio-label" for="delivery-time-3">До 3 дней</label>
+						</div>
+						<div class="controls__delivery-time radio">
+							<input 
+								class="controls__radio-input" 
+								type="radio" 
+								id="delivery-time-4"
+								name="delivery-time"
+							>
+							<label class="controls__radio-label" for="delivery-time-4">До 7 дней</label>
+						</div>
+					</fieldset>
+				</div>
+				
+				<select name="" id="" class="form-params__sort">
 					<option value="">По популярности</option>
 					<option value="">По цене</option>
 					<option value="">По названию</option>

@@ -113,12 +113,83 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__form-params {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    
+    
+}
+
+.form-params {
+    
+
+    &__wrapper-controls {
+        position: relative;
+    }
+
+    &__controls {
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        top: 55px;
+    }
+
+    &__sort {
+        font-family: inherit;
+        background: url(../IMG/arrow.svg) no-repeat right 15px center;
+        appearance: none;
+        padding: 9px 44px 9px 22px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+    
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__button {
+        font-family: inherit;
+        background: url(../IMG/arrow.svg) no-repeat right 15px center;
+        appearance: none;
+        padding: 9px 44px 9px 22px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+    
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+}
+
+.controls {
+    padding: 40px 48px;
+
+
+    &__legend {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
 }
 
 .filters__breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
+
+.breadcrumbs {
+
 }
 
 .breadcrumbs__item {
@@ -142,27 +213,6 @@ button {
     content: '/';
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.filters__form {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.filters__select {
-    font-family: inherit;
-    background: url(../IMG/arrow.svg) no-repeat right 15px center;
-    appearance: none;
-    padding: 9px 44px 9px 22px;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 20px;
-
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
 }
 
 .catalog__content {
